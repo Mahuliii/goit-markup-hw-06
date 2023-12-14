@@ -199,12 +199,97 @@ body {
 }
 .page-navigation {
 display: flex;
+justify-content: space-between;
+align-items: center;
 }
 .menu {
 display: flex;
+gap: 40px;
+margin-left: 120px;
 }
+.logo {
+    color: var(--IRIS, #4D5AE5);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+}
+.logo-link {
+    color: #2E2F42;
+}
+.navigation-own {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation-own::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    width: 100%;
+}
+.navigation {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: var(--NAVY-BLUE, #2E2F42);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.navigation:hover {
+    color: var(--OCEAN, #404bbf);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.navigation:focus {
+    text-decoration: underline;
+    color: #404bbf;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
 .contact {
 display: flex;
+font-style: normal;
+}
+.contact-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.contact-style {
+    color: var(--SLATE, #434455);
+    font-family: 'Roboto', sans-serifo;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ===============TABLET HEADER STYLE==================== */
 }
