@@ -182,8 +182,78 @@ body {
         justify-content: center;
     }
 }
-/* ===============MOBILE HEADER STYLE==================== */
-@media screen and (min-width: 766px) {
+/* ===============MOBILE HEADER STYLE end==================== */
+
+/* ===============MOBILE Section 1 - hero image================ */
+.main {
+    background-color: #2e2f42;
+    padding: 72px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    color:  #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 72px;
+}
+.service {
+    background-color: #4D5AE5;
+    color: var(--WHITE, #ffffff);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    display: block;
+    padding: 16px 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service:hover {
+    background-color: #404bbf;
+}
+.service:focus {
+    background-color: #404bbf;
+}
+.service {
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Style hero image */
+.main {
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mobile-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 320px;
+    max-height: 432px;
+}
+@media (min-resolution: 192dpi) {
+.main {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mobile-2x.jpg);
+}
+    }
+
+
+@media screen and (min-width: 768px) {
 .container {
     max-width: 736px;
 }
@@ -196,6 +266,10 @@ body {
 }
 .mobile-menu-open-btn {
     display: none;
+}
+.page-header {
+    padding-top: 18px;
+    padding-bottom: 12px;
 }
 .page-navigation {
 display: flex;
@@ -237,7 +311,7 @@ margin-left: 120px;
     content: "";
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: -12px;
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
@@ -289,9 +363,40 @@ font-style: normal;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    
 }
-/* ===============TABLET HEADER STYLE==================== */
+
+/* ===============TABLET Section 1 - hero image================ */
+.main {
+   padding: 112px 0;
+  }
+
+.title {
+   font-size: 56px;
+   line-height: 1.07;
+   letter-spacing: 0.02em;
+   margin-left: 100px;
+   margin-right: 100px;
+   margin-bottom: 36px;
+   padding: 0px;
+}
+
+/* Style hero image */
+.main {
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tablet-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 768px;
+    max-height: 436px;
+}
+
+@media (min-resolution: 192dpi) {
+    .main {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tablet-2x.jpg);
+    }
+}
+
+/* ===============TABLET STYLE end==================== */
 }
 @media screen and (min-width: 1158px) {
     .container {
@@ -422,10 +527,32 @@ font-style: normal;
     letter-spacing: 0.02em;
 }
 
+/* ===============DESKTOP Section 1 - hero image================ */
+
+.main {
+    padding: 188px 0;
+}
+.title {
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+}
+
+/* Style hero image */
+.main {
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        max-width: 1440px;
+        max-height: 600px;
+}
+
 }
 
 
 
 
 
-/* ===============DESKTOP HEADER STYLE==================== */
+/* ===============DESKTOP  STYLE end==================== */
