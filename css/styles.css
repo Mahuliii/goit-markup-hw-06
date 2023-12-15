@@ -370,6 +370,39 @@ body {
     background-color: #404bbf;
 }
 
+/* =================== MOBILE Section 4 =================== */
+.card-text {
+    display: none;
+}
+.container {
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+.our-portfolio {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+.application {
+    display: flex;
+    margin: 32px 0;
+    padding: 0px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+.title-three {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.text {
+    font-weight: 400;
+}
+
 /* =========================TABLET ========================= */
 @media screen and (min-width: 768px) {
 .container {
@@ -544,6 +577,19 @@ font-style: normal;
     width: calc((100% - 24px) / 2);
 }
 
+/* ===============TABLET Section 4 ================ */
+.our-portfolio {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+}
+.our-portfolio-list {
+    position: relative;
+    overflow: hidden;
+    width: calc((100% - 24px) / 2);
+}
 
 /* ===============TABLET STYLE end==================== */
 }
@@ -754,6 +800,63 @@ font-style: normal;
     background-color: #FFFFFF;
     width: calc((100% - 3 * 24px) / 4);
 }
+/* ===============DESKTOP Section 4 ================ */
+.container {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.our-portfolio {
+    row-gap: 48px;
+}
+.our-portfolio-list {
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.our-portfolio-list:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+
+}
+.application {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.foto {
+    background-color: #F4F4FD;
+}
+
+.portfolio-images {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-text {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    padding: 40px 32px;
+    background-color: #4D5AE5;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-portfolio-list:hover .card-text {
+    transform: translateY(0%);
+}
+
+.card-text p {
+    color: #F4F4FD;
+}
+
 }
 
 
