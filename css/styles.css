@@ -998,6 +998,27 @@ font-style: normal;
     color: #F4F4FD;
 }
 
+/* ================== DESKTOP FOOTER ======================= */
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+}
+.low {
+    padding: 100px 16px;
+}
+.container-logo {
+    margin-left: 140px;
+    margin-right: 120px;
+}
+.container-media {
+    margin-right: 80px;
+}
+.foter-subscribe-form-input {
+    margin: 0;
+}
+
+
 }
 
 
