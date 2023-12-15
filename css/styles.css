@@ -252,6 +252,37 @@ body {
 }
     }
 
+        /* =============== MOBILE Section 2 ================ */
+.feature-icon {
+    display: none;
+}
+.feature {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 72px;
+    margin-top: 96px;
+}
+.title-three {
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+.text {
+    color: var(--SLATE, #434455);
+    font-size: 16px;
+    font-weight: 500;
+    line-height:1.5;
+    letter-spacing: 0.02em;
+}
+
 
 @media screen and (min-width: 768px) {
 .container {
@@ -388,6 +419,28 @@ font-style: normal;
     background-size: cover;
     max-width: 768px;
     max-height: 436px;
+}
+
+/* ===============TABLET Section 2 ================ */
+.feature {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    
+}
+.feature-list {
+    position: relative;
+    overflow: hidden;
+    width: calc((100% - 24px) / 2);
+    
+}
+.title-three {
+    text-align: start;
+}
+.text {
+    text-align: start;
 }
 
 @media (min-resolution: 192dpi) {
@@ -549,6 +602,44 @@ font-style: normal;
         max-height: 600px;
 }
 
+/* ===============DESKTOP Section 2 ================ */
+
+.feature {
+    display: flex;
+    gap: 24px;
+}
+.feature-list {
+    width: calc((100% - 72px) / 4);
+}
+
+/* Style !-- Section 2 -- */
+
+.feature-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+.conteiner-icon {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+}
+.title-three {
+    color: var(--NAVY-BLUE, #2E2F42);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 
 
