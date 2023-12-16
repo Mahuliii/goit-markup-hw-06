@@ -988,6 +988,8 @@ font-style: normal;
 /* ===============DESKTOP HEADER STYLE==================== */
 
 .page-header {
+    padding-top: 0;
+    padding-bottom: 0;
     border-bottom: 1px solid #e7e9fc;
     background: var(--WHITE, #FFF);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -1008,6 +1010,7 @@ font-style: normal;
 .menu {
     display: flex;
     gap: 40px;
+    margin-left: 0;
 }
 .logo {
     color: var(--IRIS, #4D5AE5);
@@ -1039,7 +1042,7 @@ font-style: normal;
     content: "";
     position: absolute;
     left: 0;
-    bottom: -12px;
+    bottom: -1px;
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
