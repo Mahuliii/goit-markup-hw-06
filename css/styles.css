@@ -1252,15 +1252,24 @@ font-style: normal;
 
 /* ================== DESKTOP FOOTER ======================= */
 .footer-container {
-    display: inline-flex;
-    gap: unset;
+    display: flex;
+    align-items: baseline;
+    width: 1158px;
     }
+.container-logo {
+    margin-right: 120px;
+}
 .low {
     padding: 96px 0;
 }
-
+.text-low {
+    width: 264px;
+}
 .container-media {
     margin-right: 80px;
+}
+.subscribe-input {
+    width: 264px;
 }
 .foter-subscribe-form-input {
     margin: 0;
