@@ -981,7 +981,9 @@ font-style: normal;
 
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1440px;
+        max-width: 1158px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 /* ===============DESKTOP HEADER STYLE==================== */
 
@@ -1246,14 +1248,11 @@ font-style: normal;
 /* ================== DESKTOP FOOTER ======================= */
 .footer-container {
     display: flex;
-    align-items: baseline;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-    max-width: 1158px;
+    flex-wrap: wrap;
+    gap: unset;
     }
 .low {
-    padding: 100px 16px;
+    padding: 96px 0;
 }
 .container-logo {
     margin-left: 16px;
