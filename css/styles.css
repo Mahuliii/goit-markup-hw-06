@@ -947,12 +947,16 @@ font-style: normal;
 
 }
 /* ================== TABLET FOOTER ======================= */
+.footer-container {
+    width: 584px;
+}
 .container-logo {
-    margin-left: 96px;
     align-items: flex-start;
     margin-right: 24px;
 }
 .container-media {
+    display: inline-flex;
+    flex-direction: column;
     align-items: flex-start;
     margin: 0;
 }
@@ -964,8 +968,7 @@ font-style: normal;
     flex-direction: column;
     align-content: flex-start;
     margin-top: 72px;
-    margin-left: 96px;
-}
+    }
 .foter-subscribe-form {
     flex-direction: row;
     gap: 24px;
@@ -1192,9 +1195,8 @@ font-style: normal;
     width: calc((100% - 3 * 24px) / 4);
 }
 /* ===============DESKTOP Section 4 ================ */
-.container-portfolio {
-    margin-top: 120px;
-    margin-bottom: 120px;
+.section-portfolio {
+    margin: 120px 0;
 }
 .our-portfolio {
     row-gap: 48px;
@@ -1250,17 +1252,13 @@ font-style: normal;
 
 /* ================== DESKTOP FOOTER ======================= */
 .footer-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
     gap: unset;
     }
 .low {
     padding: 96px 0;
 }
-.container-logo {
-    margin-left: 16px;
-    
-}
+
 .container-media {
     margin-right: 80px;
 }
