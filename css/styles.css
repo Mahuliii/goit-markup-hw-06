@@ -374,7 +374,7 @@ body {
 .card-text {
     display: none;
 }
-.container {
+.container-portfolio {
     margin-top: 96px;
     margin-bottom: 96px;
 }
@@ -407,7 +407,7 @@ body {
     background-color: #2e2f42;
     padding: 96px 16px;
 }
-.container {
+.footer-container {
     margin: 0;
     padding: 0;
 }
@@ -759,6 +759,7 @@ body {
     outline: 1px solid #404BBF;
 }
 /* =========================TABLET ========================= */
+
 @media screen and (min-width: 768px) {
 .container {
     max-width: 736px;
@@ -977,11 +978,11 @@ font-style: normal;
 }
 /* ===============TABLET STYLE end==================== */
 }
+
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1168px;
+        max-width: 1440px;
     }
-
 /* ===============DESKTOP HEADER STYLE==================== */
 
 .page-header {
@@ -990,11 +991,12 @@ font-style: normal;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
-}
+    }
 .page-header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 .page-navigation {
     display: flex;
@@ -1185,7 +1187,7 @@ font-style: normal;
     width: calc((100% - 3 * 24px) / 4);
 }
 /* ===============DESKTOP Section 4 ================ */
-.container {
+.container-portfolio {
     margin-top: 120px;
     margin-bottom: 120px;
 }
@@ -1245,20 +1247,25 @@ font-style: normal;
 .footer-container {
     display: flex;
     align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 0;
-}
+    max-width: 1440px;
+    }
 .low {
     padding: 100px 16px;
 }
 .container-logo {
-    margin-left: 140px;
-    margin-right: 120px;
+    margin-left: 16px;
+    
 }
 .container-media {
     margin-right: 80px;
 }
 .foter-subscribe-form-input {
     margin: 0;
+    margin-right: 16px;
+    
 }
 
 }
