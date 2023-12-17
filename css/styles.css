@@ -924,6 +924,9 @@ font-style: normal;
     text-align: start;
 }
 /* ===============TABLET Section 3 ================ */
+.container {
+    max-width: 584px;
+}
 .our-team {
     display: inline-flex;
     flex-direction: row;
