@@ -290,6 +290,9 @@ body {
     background: var(--CLOUD, #F4F4FD);
     padding: 96px 0;
 }
+.container {
+    max-width: 296px;
+}
 .our-team {
     display: inline-flex;
     flex-direction: column;
@@ -318,7 +321,7 @@ body {
 }
 .team {
     display: flex;
-    width: 296px;
+    width: 264px;
     padding-bottom: 32px;
     flex-direction: column;
     justify-content: center;
@@ -376,7 +379,7 @@ body {
     display: none;
 }
 .section-portfolio {
-    margin: 96px 0;
+    padding: 96px 0;
 }
 .our-portfolio {
     display: inline-flex;
@@ -411,7 +414,7 @@ body {
 /* ================== MOBILE FOOTER ======================= */
 .low {
     background-color: #2e2f42;
-    padding: 96px 0;
+    padding: 96px 16px;
 }
 
 .container-logo {
